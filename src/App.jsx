@@ -1,20 +1,18 @@
-import { Navbar } from "./navbar";
+import { Navbar } from "./components/layouts/NavBar/Navbar";
+import { Header } from "./components/layouts/Header/Header";
+import {Footer} from './components/layouts/Footer/Footer';
 
 function App() {
   const sumar = () => {
     return console.log("Estoy sumando");
   };
   return (
-    <div>
-      <Navbar />
-      <main>
-        <h2>Prinicipal</h2>
-        <button onClick={sumar}>sumar</button>
-      </main>
-      <footer>
-        <h2>Footer</h2>
-      </footer>
-    </div>
+    <>
+      <Header />
+      <h1>Bienvenido a ollie Shop</h1>
+      <Footer/>
+
+    </>
   );
 }
 
